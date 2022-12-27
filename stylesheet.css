@@ -1,0 +1,785 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  /* Primary color */
+  --very-dark-blue:  hsl(243, 87%, 12%);
+  --desaturated-blue:  hsl(238, 22%, 44%);
+
+  /* Accent */
+  --bright-blue: hsl(224, 93%, 58%);
+  --moderate-cyan: hsl(170, 45%, 43%);
+
+  /*  */
+  --light-grayish-blue: hsl(240, 75%, 98%);
+  --light-grey: hsl(0, 0%, 75%);
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em 2em 1em 2em;
+  height: 4em;
+}
+
+/* Nav-brand */
+img.nav-brand{
+  height: 100%;
+  width: 100%;
+  align-self: center;
+}
+
+/* Navigation menu */
+nav ul{
+  display: flex;
+  align-self: center;
+}
+
+nav ul li{
+  list-style: none;
+  margin-left: 1.4em;
+}
+
+nav ul li>a{
+  text-decoration: none;
+  font-family: 'Raleway';
+  font-size: 12px;
+  color: var(--very-dark-blue)
+}
+
+/* Section I */
+section.I {
+  padding: 5em 2em 1em 2em;
+}
+section.I .image-container img{
+  height: 100%;
+  width: 100%;
+}
+
+/* Text container */
+section.I .text-container{
+  padding: 2em 0 0em 0;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+section.I .text-container h3{
+  font-family: 'Open Sans';
+  font-weight: 800;
+  padding: .5em 0;
+  font-size: 1.4em;
+  color: var(--very-dark-blue)
+}
+
+section.I .text-container p{
+  font-family: 'Open Sans';
+  padding: 1em 0;
+  font-weight: 600;
+  font-size: .9em;
+  line-height: 1.6;
+  color: var(--very-dark-blue);
+}
+
+/* section I form */
+section.I form{
+  display: flex;
+  flex-direction: column;
+}
+section.I form input.email{
+  padding: 1em 2.5em;
+  margin-bottom: 2em;
+  color: var(--light-grey);
+  font-weight: 600;
+  border: 1px solid var(--very-dark-blue);
+}
+
+section.I form button{
+  padding: 1em 2.5em;
+  margin-bottom: 2em;
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+  border: 1px solid var(--bright-blue);
+  background: var(--bright-blue);
+}
+
+/* Section II */
+section.II{
+  padding: 3em 2em;
+  background: url('images/bg-curve-mobile.svg') center top no-repeat;
+  background-size: cover;
+}
+
+/* image container */
+section.II .image-container img{
+  width: 100%;
+  height: 100%;
+}
+
+/* Text container */
+section.II .text-container{
+  padding: 2em 0;
+  margin: 1.5em 0;
+}
+
+section.II .text-container h4{
+  font-family: 'Open Sans';
+  font-weight: 800;
+  padding: .5em 0 1em 0;
+  color: var(--very-dark-blue);
+  text-align: center;
+}
+
+section.II .text-container p{
+  font-family: 'Open Sans';
+  padding-top: .5em;
+  padding-bottom: 2em;
+  color: var(--desaturated-blue);
+  font-size: .9em;
+  font-weight: 450;
+  line-height: 1.6;
+}
+
+/* link */
+section.II .text-container .link{
+  border-bottom: 1.5px solid var(--moderate-cyan);
+  padding-bottom: .4em;
+  margin: 0 auto;
+  width: 140px;
+  display: flex;
+  justify-content: center;
+}
+section.II .text-container .link>a{
+  text-decoration: none;
+  color: var(--moderate-cyan);
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 13px;
+}
+
+section.II .text-container .link>img{
+  margin-left: 5px;
+  align-self: center;
+}
+
+/* Testimonial card */
+section.II .testimonial-card{
+  width: 80%;
+  margin-top: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 0 12px var(--light-grey);
+  border-radius: 5px ;
+  padding: 1.4em;
+
+  
+}
+
+section.II .testimonial-card p{
+  font-family: 'Open Sans';
+  font-size: 9.6px;
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  padding-bottom: .5em;
+}
+
+/* Avatar */
+section.II .testimonial-card .avatar{
+  display: flex;
+  padding-top: .6em; 
+}
+
+section.II .testimonial-card .avatar img{
+  border-radius: 50px;
+  height: 35px;
+  width: 35px;
+}
+
+section.II .testimonial-card .avatar .name-position{
+  margin-left: .7em;
+  align-self: center;
+}
+
+.avatar .name-position h6{
+  font-family: 'Raleway';
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.avatar .name-position small{
+  font-family: 'Open Sans';
+  font-size: 9px;
+}
+
+/* Section III */
+section.III{
+  background-color: var(--desaturated-blue);
+  padding: 2em;
+}
+
+section.III .text-container{
+  padding: 1em 0 2em 0;
+  text-align: center;
+  color: #fff;
+}
+
+section.III .text-container h2{
+  font-family: 'Open Sans';
+  font-size: 19px;
+  padding: .5em 0 1em 0;
+}
+
+section.III .text-container p{
+  font-family: 'Open Sans';
+  font-size: 15px;
+  padding: .5em;
+  color: #fff;
+  line-height: 1.65;
+}
+
+/* Section III form */
+section.III form{
+  display: flex;
+  flex-direction: column;
+  padding: .2em 0 1em 0;
+}
+section.III form input.email{
+  padding: 1em 2.5em;
+  margin-bottom: 2em;
+  color: var(--light-grey);
+  font-weight: 600;
+}
+
+section.III form button{
+  padding: 1em 2.5em;
+  margin-bottom: 2em;
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+  border: 1px solid var(--bright-blue);
+  background: var(--bright-blue);
+}
+
+/* footer */
+footer{
+  padding: 3em 2em;
+  background-color: var(--very-dark-blue);
+  color: #fff;
+}
+
+/* footer first container */
+footer .first-container{
+  padding-bottom: 1.5em;
+}
+/* phone-no */
+footer .first-container .phone-no{
+  display: flex;
+  padding-top: 1em;
+}
+
+footer .first-container .phone-no small{
+  align-self: center;
+  font-family: 'Open sans';
+  margin-left: .7em;
+}
+
+/* email */
+footer .first-container .email{
+  display: flex;
+  padding-top: 1em;
+}
+
+footer .first-container .email small{
+  align-self: center;
+  font-family: 'Open sans';
+  margin-left: .7em;
+}
+
+/* Second container and Third container */
+
+footer ul{
+  padding: .5em 0;
+}
+
+footer ul li{
+  list-style: none;
+  margin: 1em 0;
+}
+
+footer ul li>a{
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 13.3333px;
+}
+
+/* fourth container */
+.socials{
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: .7em .8em;
+  margin: 0 .2em;
+  border-radius: 100px;
+  font-size: 19px;
+}
+
+.socials a.i{
+  padding: .6em 1em .4em 1em;
+}
+
+
+/* Navigation menu for smaller mobile screens */
+@media (max-width: 327px){
+  nav ul li{
+    
+    margin-left: 1em;
+  }
+  nav ul li>a{
+    font-size: 10.3px;
+  }
+  
+}
+
+@media (max-width: 291px){
+
+  nav{
+    padding: 1.5em 1.5em;
+  }
+
+  nav ul li{
+    
+    margin-left: .6em;
+  }
+  nav ul li>a{
+    font-size: 10.3px;
+  }
+  
+}
+
+/* desktop screens */
+
+@media (min-width: 700px){
+
+  /* Navigation */
+  nav{
+    padding: 3.5em;
+    height: 10em
+  }
+
+  nav ul li{
+    margin-left: 2em;
+  }
+
+  /* section I */
+  section.I {
+    padding: 5em 3em 5em 3em;
+    background: url("images/illustration-1.svg") right 3em center no-repeat;
+    background-size: 44%;
+    margin-bottom: 5em;
+  }
+  
+  section.I .image-container img{
+    display: none;
+  }
+
+/* Text container */
+  section.I .text-container{
+    text-align: start;
+    margin-bottom: 2em;
+    width: 45%;
+  }
+
+  section.I .text-container h3{
+    font-size: 2.3em;
+  }
+
+  section.I .text-container p{
+    padding: .5em 0 1em 0;
+    font-weight: 600;
+    font-size: 1.1em;
+    line-height: 1.3;
+  }
+
+  /* section I form */
+  section.I form{
+    flex-direction: row;
+  }
+
+  section.I form input.email{
+    margin-right: 2em;
+    width: 50%;
+  }
+
+  section.I form button{
+    width: 30%;
+  }
+
+  section.I form button:hover{
+    cursor: pointer;
+    background-color: hsla(223, 94%, 69%, 0.726);
+    border: 1px solid hsla(223, 94%, 69%, 0.726);
+  }
+
+  /* Secction II */
+  section.II{
+    padding: 3em;
+    background: url("images/illustration-2.svg") center right 3em no-repeat, url('images/bg-curve-desktop.svg') center top no-repeat;
+    background-size: 44%, cover;
+  }
+
+  section.II :first-child{
+    order: 2
+  }
+  
+  /* image container */
+  section.II .image-container img{
+    display: none;
+  }
+  
+  /* Text container */
+  section.II .text-container{
+    padding: 2em 0;
+    margin: 1.5em 0;
+    width: 50%;
+  }
+  
+  section.II .text-container h4{
+    font-size: 2.3em;
+    padding: .5em 0 .7em 0;
+    text-align: start;
+  }
+  
+  section.II .text-container p{
+    padding-bottom: 1em;
+    color: var(--very-dark-blue);
+    font-size: 1.1em;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+  
+  /* link */
+  section.II .text-container .link{
+    padding-bottom: .2em;
+    margin: 0;  
+  }
+
+  .link :first-child{
+    order: 0 !important;
+  }
+
+  
+  /* Testimonial card */
+  section.II .testimonial-card{
+    width: 38%;
+    margin-top: 2.5em;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 5px ;
+  }
+  
+  section.II .testimonial-card p{
+    font-size: 9.6px;
+  }
+  
+  /* Avatar */
+
+  .avatar :first-child{
+    order: 0 !important;
+  }
+
+  /* Section III */
+section.III{
+  display: grid;
+  padding: 1.7em 3em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.III .text-container{
+  text-align: start;
+  
+}
+
+section.III .text-container h2{
+  font-size: 25px;
+  padding: .5em 0 1em 0;
+}
+
+section.III .text-container p{
+  font-family: 'Open Sans';
+  font-size: 15px;
+  padding: .5em;
+  color: #fff;
+  line-height: 1.65;
+  max-width: 72%;
+}
+
+/* Section III form */
+section.III form{
+  margin-top: 2.2em;
+}
+
+section.III form button{
+  max-width: 35%;
+}
+
+section.III form button:hover{
+  cursor: pointer;
+  background-color: hsla(223, 94%, 69%, 0.726);
+  border: 1px solid hsla(223, 94%, 69%, 0.726);
+}
+
+/* footer */
+footer{
+  display: flex;
+  padding: 4em 3em;
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  justify-content: space-between;
+}
+
+
+/* Second container and Third container */
+
+footer ul li>a:hover{
+  color: var(--bright-blue);
+}
+
+/* fourth container */
+.socials{
+  padding: 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  padding: .7em .8em;
+  margin: 0 .2em;
+  font-size: 25px;
+}
+
+.socials a.i{
+  padding: .7em .8em;
+}
+
+}
+
+/* font-size for screens btw 700px-999px */
+@media (700px <= width <= 999px){
+
+  /* Navigation */
+  nav{
+    padding: 2.5em;
+    height: 7em;
+  }
+ 
+
+  section.I {
+    padding: 3em 2.5em 2em 2.5em;
+    background: url("images/illustration-1.svg") right 2em center no-repeat;
+    background-size: 47%;
+    margin-bottom: 2em;
+  }
+  
+
+/* Text container */
+  section.I .text-container{
+    margin-bottom: 2em;
+    width: 55%;
+  }
+
+  section.I .text-container h3{
+    font-size: 1.4em;
+  }
+
+  section.I .text-container p{
+    padding: .5em 0 1.5em 0;
+    font-size: .8em;
+    
+  }
+
+  /* section I form */
+  section.I form{
+    flex-direction: column;
+  }
+  section.I form input.email{
+    padding: 1em 2.5em;
+    margin-bottom: 1em;
+    width: 60% !important;
+  }
+  
+  section.I form button{
+    padding: 1em 2.5em;
+    margin-bottom: 2em;
+    width: 60% !important;
+  }
+  
+  /* Secction II */
+  section.II{
+    padding: 2.5em;
+    background: none, url('images/bg-curve-desktop.svg') center top no-repeat;
+    background-size: 44%, cover;
+
+  }
+  
+  /* image container */
+  section.II .image-container img{
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Text container */
+  section.II .text-container{
+    width: 100%;
+  }
+  
+  section.II .text-container h4{
+    font-size: 1.4em;
+    text-align: center;
+  }
+  
+  section.II .text-container>p{
+    font-size: .8em;
+    text-align: center;
+  }
+  
+  /* link */
+  section.II .text-container .link{
+    margin: 0 auto;
+  }
+
+  
+  /* Testimonial card */
+  section.II .testimonial-card{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  section.II .testimonial-card p{
+    font-size: 9.6px;
+  }
+
+  /* Section III */
+section.III{
+  display: grid;
+  padding: 1.7em 2.5em 1em 2.5em;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+section.III .text-container{
+  text-align: start;
+  padding-bottom: .5em;
+}
+
+section.III .text-container h2{
+  font-size: 18px;
+  padding-bottom: .5em;
+}
+
+section.III .text-container p{
+  font-size: 11px;
+}
+
+/* Section III form */
+section.III form{
+  margin-top: 1.5em;
+}
+
+section.III form button{
+  max-width: 45%;
+  font-size: 10px;
+}
+
+/* footer */
+footer{
+  display: flex;
+  padding: 4em 2.5em;
+  background-color: var(--very-dark-blue);
+  color: #fff;
+  justify-content: space-between;
+}
+
+/* first container */
+footer .first-container{
+  font-size: 12px;
+}
+
+/* Second container and Third container */
+
+footer ul li>a{
+  font-size: 12px;
+}
+
+
+footer ul li>a:hover{
+  color: var(--bright-blue);
+}
+
+/* fourth container */
+.socials{
+  padding: 1em 0 2em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socials a{
+  text-decoration: none;
+  color: #fff;
+  border: 0;
+  padding: .7em .8em;
+  margin: 0 .2em;
+  font-size: 18px;
+}
+
+.socials a.i{
+  padding: .7em .8em;
+}
+
+}
+
+/* larger screens 1588px */
+@media (min-width: 1588px){
+  section.I {
+    padding: 5em 3em 5em 3em;
+    background: url("images/illustration-1.svg") right 3em center no-repeat;
+    background-size: 37%;
+    margin-bottom: 5em;
+  }
+
+  section.II{
+    padding: 3em;
+    background: url("images/illustration-2.svg") center right 3em no-repeat, url('images/bg-curve-desktop.svg') center top no-repeat;
+    background-size: 37%, cover;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
