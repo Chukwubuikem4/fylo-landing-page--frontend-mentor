@@ -255,6 +255,7 @@ section.III form input.email{
   margin-bottom: 2em;
   color: var(--light-grey);
   font-weight: 600;
+  background-color: #fff;
 }
 
 section.III form button{
